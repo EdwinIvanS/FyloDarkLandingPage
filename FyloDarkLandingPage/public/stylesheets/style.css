@@ -2,9 +2,10 @@
   /* Colors ### Primary */
   
   --Dark-Blue-main-background: hsl(218, 28%, 13%);  
-  --Dark-Blue-testimonials-background: hsl(219, 30%, 18%); 
+  --Dark-Blue-testimonials-background: hsl(219, 26%, 25%); 
   --Dark-Blue-intro-email-sign: hsl(217, 28%, 15%);
   --Dark-Blue-footer-background: hsl(216, 53%, 9%);
+  --Dark-email: hsl(216, 28%, 23%);
 
   /*### Accent */
 
@@ -13,17 +14,341 @@
   --Light-Red-error: hsl(0, 100%, 63%);
 
   /*### Neutral */
-
   --White: hsl(0, 0%, 100%);
 }
 
 *{
   background-color: var(--Dark-Blue-main-background);
   color: var(--White);
+  font-size: 12px;
 }
 
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body {  
+  border: 1px solid red;
+  font-family: 'Open Sans';
 }
 
+/*Header nav*/
+
+.nav{  
+  display: flex;
+  background-color: var(--Dark-Blue-main-background);
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-img{
+  align-items: center;
+  display: flex;
+  width: 50%;
+}
+
+.nav-img img{
+  width: 50%;
+}
+
+.nav-link{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nav-link p {
+  color: rgb(167, 166, 166);
+  
+}
+
+.nav-link p:hover{
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+
+/* seccion 1*/
+section .info-site{
+  text-align: center;
+}
+
+.info-site img{
+  margin-top: 30px;
+  width: 70%;
+}
+
+.info-site h1{
+  font-size: 20px;
+}
+
+.Cuerpo-section{
+  margin: 5px 20px 20px 20px;
+}
+
+form button {
+  background-color: var(--Cyan-call-to-action-gradient);
+  border-radius: 50px;
+  font-size: 10px;
+  height: 30px;
+  width: 150px;
+  
+}
+
+/*section-2*/
+.access{
+  text-align: center;
+  margin: 50px 20px;
+}
+
+.access h2{
+  font-size: 14px;
+}
+
+.access img{
+  width: 15%;
+}
+
+/*section-3*/
+
+.section-3 {
+  text-align: center;
+}
+.productividad{
+  margin: 30px 20px;
+}
+
+.productividad p{
+  text-align: justify;
+}
+
+.productividad-img img{
+  width: 70%;
+}
+
+.productividad-link{
+  align-items: center;
+  display: flex;
+  color: var(--Cyan-call-to-action-gradient);
+}
+
+/*section-4*/
+.section-4{
+  padding: 50px 0px 50px 0px;
+}
+
+#quotes {
+  left: 26px;
+  position: absolute;
+  width: 20px;
+  top: 1723px;
+}
+
+.contenedor-descripcion{
+  align-items: center;
+  background-color: var(--Dark-Blue-testimonials-background);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.contenedor-descripcion img{
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+}
+
+.contenedor-testimonio{
+  background-color: var(--Dark-Blue-testimonials-background);
+  border-radius: 10px;
+  margin: 20px 20px;
+  padding: 5px 20px;
+  
+}
+
+.contenedor-testimonio p{
+  background-color: var(--Dark-Blue-testimonials-background);
+}
+
+.datos-cliente h3 {
+  background-color: var(--Dark-Blue-testimonials-background);
+  margin: 0px;
+}
+
+.datos-cliente h5 {
+  background-color: var(--Dark-Blue-testimonials-background);
+  font-size: 10px;
+  font-weight: normal;
+  margin: 0px;
+}
+
+/*section email*/
+
+.email{
+  background-color: var(--Dark-email);  
+  border-radius: 10px;
+  margin: 15px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+.email:hover{
+  box-shadow: 3px 3px 3px 2px rgba(223, 212, 212, 0.2);
+}
+
+.email h1{
+  background-color: var(--Dark-email);
+  font-size: 18px;
+}
+
+.email h5{
+  background-color: var(--Dark-email);
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0px 17px 10px 17px;
+}
+
+.formulario-envio form{
+  background-color: var(--Dark-email);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px 10px;  
+}
+
+.formulario-envio form input{
+  background-color: white;
+  border-radius: 50px;
+  height: 30px;
+  width: 250px;
+}
+
+.formulario-envio form button {
+  background-color: var(--Cyan-call-to-action-gradient);
+  border-radius: 50px;
+  height: 37px;
+  margin: 10px 0px;
+  width: 260px;
+}
+
+button:hover{
+  background-color: var(--Blue-call-to-action-gradient);
+}
+
+.formulario-envio form button:hover{
+  background-color: var(--Blue-call-to-action-gradient);
+}
+
+/*footer*/
+
+.logo-footer img{
+  width: 150px;
+}
+
+
+
+
+footer{
+  border: 1px solid rebeccapurple;
+  margin: 30px 15px;
+}
+
+.contenedor-footer-1{
+  align-items: center;
+  display: flex;
+}
+
+.contenedor-footer-1 img{
+  height: 23px;
+  padding: 0px 15px;
+  width: 23px;
+}
+
+.contenedor-footer-1 p {
+  font-size: 14px;
+}    
+
+.contenedor-footer-2 {
+  display: grid;
+}
+
+.phone-footer{
+  align-items: center;
+  display: flex;
+}
+
+.phone-footer img{
+  height: 23px;
+  padding: 0px 15px;
+  width: 23px;
+}
+
+.phone-footer p {
+  font-size: 14px;
+}
+
+.email-footer{
+  align-items: center;
+  display: flex;
+}
+
+.email-footer img {
+  height: 23px;
+  padding: 0px 15px;
+  width: 23px;
+}
+
+.email-footer p{
+  font-size: 14px;
+}
+
+.contenedor-footer-3 {
+  display: grid;
+  padding: 50px 0px 10px 15px;
+}
+
+.contenedor-footer-3 a{
+  color: rgb(231, 235, 231);
+  font-size: 14px;
+  padding: 5px 0px;
+  text-decoration: none;
+}
+
+.contenedor-footer-3 a:hover {
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.contenedor-footer-4 {
+  display: grid;
+  padding: 10px 0px 50px 15px;
+}
+
+.contenedor-footer-4 a {
+  color: rgb(231, 235, 231);
+  font-size: 14px;
+  padding: 5px 0px;
+  text-decoration: none;
+}
+
+.contenedor-footer-4 a:hover {
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.contenedor-footer-redes{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-footer-redes i{
+  padding: 0px 10px 0px 10px;
+}
+
+
+
+
+/*DISPOSITIVOS MOVILES*/
+@media (max-width:361px){ 
+}
