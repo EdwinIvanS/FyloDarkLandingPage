@@ -4,7 +4,7 @@
   --Dark-Blue-main-background: hsl(218, 28%, 13%);  
   --Dark-Blue-testimonials-background: hsl(219, 26%, 25%); 
   --Dark-Blue-intro-email-sign: hsl(217, 28%, 15%);
-  --Dark-Blue-footer-background: hsl(216, 53%, 9%);
+  --Dark-Blue-footer-background: hsl(213, 65%, 3%);
   --Dark-email: hsl(216, 28%, 23%);
 
   /*### Accent */
@@ -18,13 +18,13 @@
 }
 
 *{
-  background-color: var(--Dark-Blue-main-background);
+  
   color: var(--White);
   font-size: 12px;
 }
 
 body {  
-  border: 1px solid red;
+  background-color: var(--Dark-Blue-main-background);
   font-family: 'Open Sans';
 }
 
@@ -34,7 +34,6 @@ body {
   display: flex;
   background-color: var(--Dark-Blue-main-background);
   justify-content: space-around;
-  width: 100%;
 }
 
 .nav-img{
@@ -186,9 +185,11 @@ form button {
   background-color: var(--Dark-email);  
   border-radius: 10px;
   margin: 15px;
+  margin-bottom: -150px;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 18px;
+  position: relative;
 }
 
 .email:hover{
@@ -244,13 +245,14 @@ button:hover{
   width: 150px;
 }
 
-
-
-
 footer{
-  border: 1px solid rebeccapurple;
-  margin: 30px 15px;
+  padding: 230px 20px 50px 20px;
+  background-color: var(--Dark-Blue-footer-background);
 }
+
+  .contenedor-footer-redes i:hover{
+    color: aqua;
+  }
 
 .contenedor-footer-1{
   align-items: center;
@@ -350,5 +352,191 @@ footer{
 
 
 /*DISPOSITIVOS MOVILES*/
-@media (max-width:361px){ 
+@media (max-width:375px){ 
+  body {
+      border: 2px solid red;
+    }
+  
+  .info-site{
+    margin: none;
+  }
+
+  .nav{
+    padding: 20px;
+  }
+
+}
+
+@media (min-width:376px) {
+  body {
+    border: 2px solid rgb(38, 0, 255);
+  }
+  .nav {
+    padding: 25px;
+  }
+
+  .info-site{
+    margin: 0px 80px;
+  }
+  .section-2{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .access{
+    width: 30%;
+  }
+  .nav-link p {
+  font-size:14px;  
+  }
+
+   .nav-link p:hover{
+  font-size: 16px;
+}
+
+  .section-3{
+    margin: none;
+  }
+  .productividad{
+    margin: 0px 35px;
+  }
+  .section-4{
+    margin: 0px 25px;
+  }
+  .section-email{
+    text-align: -webkit-center;
+  }
+  .email{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: -100px;
+    width: 85%;
+  }
+
+  .formulario-envio form button{
+  margin: 0px;
+  width: 260px;
+  }
+
+footer{
+  padding-top: 180px;
+}
+}
+
+
+@media (min-width:769px) { 
+  body{
+    border: 2px solid rgb(0, 255, 85);
+  }
+
+  .nav {
+    padding: 35px;
+  }
+
+  .info-site{
+    margin: 0px 110px;
+  }
+
+  .nav-link {
+    width: 35%;
+  }
+
+  .nav-link p {
+    font-size:15px;  
+    justify-content: space-evenly;
+    
+  }
+
+  .nav-link p:hover{
+  font-size: 17px;
+}
+
+  *{
+    font-size: 13px;
+  }
+
+  .access{
+    width: 35%;
+  }
+
+  .section-3{
+    margin: 40px;
+  }
+
+  .section-3 div{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .productividad{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+
+  .productividad-img img{
+    width: 95%;
+  }
+
+  .section-4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contenedor-testimonio{   
+    margin: 20px 13px;
+
+    width: 23%;
+  }
+  .section-email{
+    text-align: -webkit-center;
+  }
+  .email{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 55%;
+  }
+
+  .formulario-envio form button{
+  margin: 0px;
+  width: 150px;
+  }
+
+  .contenedor-footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contenedor-footer-1{
+    align-self: start;
+    width: 30%;
+  }
+  .contenedor-footer-2{
+    align-self: start;
+    justify-content: center;
+    width: 20%;
+  }
+  .contenedor-footer-3{
+    justify-content: center;
+    padding: 0px;
+    width: 15%;
+  }
+  
+  .contenedor-footer-4{
+    align-self: start;
+    justify-content: center;
+    padding: 0px;
+    width: 15%;
+  }
+  
+  .contenedor-footer-redes{
+    align-self: start;
+    justify-content: center;
+    width: 20%;
+  }
 }
