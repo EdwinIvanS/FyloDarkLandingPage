@@ -26,6 +26,7 @@
 body {  
   background-color: var(--Dark-Blue-main-background);
   font-family: 'Open Sans';
+  margin: 0px;
 }
 
 /*Header nav*/
@@ -353,9 +354,6 @@ footer{
 
 /*DISPOSITIVOS MOVILES*/
 @media (max-width:375px){ 
-  body {
-      border: 2px solid red;
-    }
   
   .info-site{
     margin: none;
@@ -368,9 +366,6 @@ footer{
 }
 
 @media (min-width:376px) {
-  body {
-    border: 2px solid rgb(38, 0, 255);
-  }
   .nav {
     padding: 25px;
   }
@@ -427,10 +422,6 @@ footer{
 
 
 @media (min-width:769px) { 
-  body{
-    border: 2px solid rgb(0, 255, 85);
-  }
-
   .nav {
     padding: 35px;
   }
