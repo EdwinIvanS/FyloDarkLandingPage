@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const {validationResult} = require('express-validator');
 
 const descripcionesFilePath = path.join(__dirname, '../database/descripcionesBody.json');
 const descripciones = JSON.parse(fs.readFileSync(descripcionesFilePath, 'utf-8'));
@@ -13,5 +14,4 @@ const mainController= {
         res.render('index', {testimonios ,descripciones });
     }
 }
-
 module.exports = mainController;

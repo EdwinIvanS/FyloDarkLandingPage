@@ -93,6 +93,10 @@ form button {
   
 }
 
+form input{
+  color: black;
+}
+
 /*section-2*/
 .access{
   text-align: center;
@@ -349,7 +353,10 @@ footer{
   padding: 0px 10px 0px 10px;
 }
 
-
+.text-danger{
+  display: none;
+  color: var(--Light-Red-error);
+}
 
 
 /*DISPOSITIVOS MOVILES*/
