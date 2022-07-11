@@ -10,23 +10,25 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   </head>
   <body>
+
     <nav>
       <%- include('partials/nav'); %> 
     </nav>
 
     <header>
-        <section class="section-1">
-          <%- include('partials/section-1'); %>
-        </section>
-        <section class="section-2">
-          <%- include('partials/section-2'); %>
-        </section>
-        <section class="section-3">
-          <%- include('partials/section-3'); %>
-        </section>
-        <section class="section-4">
-          <%- include('partials/section-4'); %>
-        </section>
+      <section class="section-1">
+        <%- include('partials/section-1'); %>
+      </section>
+      <section class="section-2">
+        <%- include('partials/section-2'); %>
+      </section>
+      <section class="section-3">
+        <%- include('partials/section-3'); %>
+      </section>
+      <section class="section-4">
+        <img src="/images/bg-quotes.png" alt="" id="quotes">
+        <%- include('partials/section-4'); %>
+      </section>
     </header>
 
     <section class="section-email">
@@ -36,6 +38,7 @@
     <footer>
       <%- include('partials/footer'); %>
     </footer>
+
   </body>  
 </html>
 

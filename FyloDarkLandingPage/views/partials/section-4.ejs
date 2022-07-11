@@ -1,36 +1,12 @@
-<img src="/images/bg-quotes.png" alt="" id="quotes">
-<div class="contenedor-testimonio">
-    <p>Fylo has improved our team productivity by an order of magnitude. Sinces making the switch our team has become a
-        well-olled collaboration machine.</p>
-    <div class="contenedor-descripcion">
-        <img src="/images/profile-1.jpg" alt="">
-        <div class="datos-cliente">
-            <h3>Satish Patel</h3>
-            <h5>Founder & CEO, Huddle</h5>
+<% for (let i = 0; i < testimonios.length; i++) { %>
+    <div class="contenedor-testimonio">
+        <p><%= testimonios[i].descripcion%> </p>
+        <div class="contenedor-descripcion">
+            <img src="<%= testimonios[i].imagen %>" alt="">
+            <div class="datos-cliente">
+                <h3><%= testimonios[i].nombre%>"</h3>
+                <h5><%= testimonios[i].cargo%>"</h5>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="contenedor-testimonio">
-    <p>Fylo has improved our team productivity by an order of magnitude. Since making the swith our team has become a
-        well-olled collaboration machine.</p>
-    <div class="contenedor-descripcion">
-        <img src="/images/profile-2.jpg" alt="">
-        <div class="datos-cliente">
-            <h3>Bruce McKenzle</h3>
-            <h5>Founder & CEO, Huddle</h5>
-        </div>
-    </div>
-</div>
-
-<div class="contenedor-testimonio">
-    <p>Fylo has improved our team productivity by an order of magnitude. Since making the swith our team has become a
-        well-olled collaboration machine.</p>
-    <div class="contenedor-descripcion">
-        <img src="/images/profile-3.jpg" alt="">
-        <div class="datos-cliente">
-            <h3>Iva Boys</h3>
-            <h5>Founder & CEO, Huddle</h5>
-        </div>
-    </div>
-</div>
+<% } %>
